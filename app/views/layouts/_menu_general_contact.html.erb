@@ -1,0 +1,17 @@
+<div id="header">
+	<div id="banner">	
+		<div id="logo_header"><h1><%= link_to "Jérémy Dagorn", :controller => "presentation/", :action => "index" %></h1></div>
+		<div id="message_header">Learn everywhere, everything, everytime...</div>
+	</div>
+
+	<div id="top_menu">
+		<ol>
+			<li><%= link_to "Home", :controller => "presentation/", :action=>"index" %></li>
+			<li><%= link_to "Educational background", :action=>"education" %></li>
+			<li><%= link_to "Experiences", :action=>"experiences"%> </li>	
+			<li><%= link_to "Contact", :action=>"index" %></li>
+			<li><%= link_to "Blog", :controller => "presentation/", :action=>"temporary_function" %></li>
+		</ol>
+	</div>
+</div>
+

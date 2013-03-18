@@ -1,0 +1,24 @@
+<h1>Editing current_project</h1>
+
+<% form_for(@current_project) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name_project %><br />
+    <%= f.text_field :name_project %>
+  </p>
+  <p>
+    <%= f.label :pourcentage_achieved %><br />
+    <%= f.text_field :pourcentage_achieved %>
+  </p>
+  <p>
+    <%= f.label :description_project %><br />
+    <%= f.text_field :description_project %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @current_project %> |
+<%= link_to 'Back', current_projects_path %>

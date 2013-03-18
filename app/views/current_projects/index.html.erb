@@ -1,0 +1,24 @@
+<h1>Listing current_projects</h1>
+
+<table>
+  <tr>
+    <th>Name project</th>
+    <th>Pourcentage achieved</th>
+    <th>Description project</th>
+  </tr>
+
+<% @current_projects.each do |current_project| %>
+  <tr>
+    <td><%=h current_project.name_project %></td>
+    <td><%=h current_project.pourcentage_achieved %></td>
+    <td><%=h current_project.description_project %></td>
+    <td><%= link_to 'Show', current_project %></td>
+    <td><%= link_to 'Edit', edit_current_project_path(current_project) %></td>
+    <td><%= link_to 'Destroy', current_project, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New current_project', new_current_project_path %>

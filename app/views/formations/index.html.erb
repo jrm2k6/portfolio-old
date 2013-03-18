@@ -1,0 +1,36 @@
+<h1>Listing formations</h1>
+
+<table>
+  <tr>
+    <th>School</th>
+    <th>Degree</th>
+    <th>Major</th>
+    <th>City</th>
+    <th>Country</th>
+    <th>Begin</th>
+    <th>End</th>
+    <th>Website</th>
+    <th>Logo</th>
+  </tr>
+
+<% @formations.each do |formation| %>
+  <tr>
+    <td><%=h formation.school %></td>
+    <td><%=h formation.degree %></td>
+    <td><%=h formation.major %></td>
+    <td><%=h formation.city %></td>
+    <td><%=h formation.country %></td>
+    <td><%=h formation.begin %></td>
+    <td><%=h formation.end %></td>
+    <td><%=h formation.website %></td>
+    <td><%=h formation.logo %></td>
+    <td><%= link_to 'Show', formation %></td>
+    <td><%= link_to 'Edit', edit_formation_path(formation) %></td>
+    <td><%= link_to 'Destroy', formation, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New formation', new_formation_path %>

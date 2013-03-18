@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+ 
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta name="description" content="Website of a student in Software engineering. You will see my educational background, and projects I am currently working on, and some tips about different things, more for myself than anything else but..">
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <%= stylesheet_link_tag 'main' %>
+  <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+  <%= javascript_include_tag :defaults %>
+  <title>Jérémy Dagorn </title>
+</head>
+<body>
+<div id="content">
+ 
+<%= render :partial => 'layouts/menu_general_contact' %>
+<br \>
+<%= yield %>
+<br \>
+</div>
+<div id="cv_box">
+<%= link_to 'Download my resume', pdf_path('resume.pdf') -%>
+</div>
+<%= render :partial => 'layouts/footer' %>
+ 
+<script type="text/javascript">
+	jQuery(document).ready(function (){
+               	 disappear(".success");
+          		});
+
+</script>
+</body>
+</html>

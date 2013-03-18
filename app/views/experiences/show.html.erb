@@ -1,0 +1,48 @@
+<p>
+  <b>Name:</b>
+  <%=h @experience.name %>
+</p>
+
+<p>
+  <b>Place:</b>
+  <%=h @experience.place %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%=h @experience.city %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%=h @experience.country %>
+</p>
+
+<p>
+  <b>Begin:</b>
+  <%=h @experience.begin %>
+</p>
+
+<p>
+  <b>End:</b>
+  <%=h @experience.end %>
+</p>
+
+<p>
+  <b>Kind:</b>
+  <%=h @experience.kind_id %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%=h @experience.content %>
+</p>
+
+<p>
+  <b>Skills:</b>
+  <%=h @experience.skills %>
+</p>
+
+
+<%= link_to 'Edit', edit_experience_path(@experience) %> |
+<%= link_to 'Back', experiences_path %>

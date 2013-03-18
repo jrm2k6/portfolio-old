@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <meta name="description" content="Website of a student in Software engineering. You will see my educational background, and projects I am currently working on, and some tips about different things, more for myself than anything else but..">
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <title>Jérémy Dagorn</title>
+  <%= stylesheet_link_tag 'main' %>
+ <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32881023-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+ </script>
+</head>
+<body>
+<div id="content">
+<%= render :partial => 'layouts/menu_general' %>
+
+<%= yield %>
+</div>
+<div id="cv_box">
+<%= link_to 'Download my resume', pdf_path('resume.pdf') %>
+</div>
+<%= render :partial => 'layouts/footer' %>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<h1>Editing formation</h1>
+
+<% form_for(@formation) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :school %><br />
+    <%= f.text_field :school %>
+  </p>
+  <p>
+    <%= f.label :degree %><br />
+    <%= f.text_field :degree %>
+  </p>
+  <p>
+    <%= f.label :major %><br />
+    <%= f.text_field :major %>
+  </p>
+  <p>
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </p>
+  <p>
+    <%= f.label :country %><br />
+    <%= f.text_field :country %>
+  </p>
+  <p>
+    <%= f.label :begin %><br />
+    <%= f.text_field :begin %>
+  </p>
+  <p>
+    <%= f.label :end %><br />
+    <%= f.text_field :end %>
+  </p>
+  <p>
+    <%= f.label :website %><br />
+    <%= f.text_field :website %>
+  </p>
+  <p>
+    <%= f.label :logo %><br />
+    <%= f.text_field :logo %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @formation %> |
+<%= link_to 'Back', formations_path %>

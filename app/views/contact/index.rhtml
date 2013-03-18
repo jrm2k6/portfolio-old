@@ -1,0 +1,21 @@
+<br style="clear:left"/>
+<h3>Contact</h3>
+<div id="contact_welcome_message">
+If you have any questions or comments.. you can send me a message.
+</div>
+<p style="color: #666666">(NB : All fields are required.)</p>
+<% form_for :email, :url => { :controller => 'contact', :action => 'send_email' } do |f| %>
+  <%= f.label :name  %><br />
+  <%= f.text_field :name, :size => 60, :required => true %><br />
+  <%= f.label :address %><br />
+  <%= f.text_field :address, :size => 60, :required => true%><br />
+  <%= f.label :subject %><br />
+  <%= f.text_field :subject, :size => 60 , :required => true %><br />
+  <%= f.label :body %><br />
+  <%= f.text_area :body,:rols => 10, :cols => 60 , :required => true%><br />
+  <%= submit_tag "Send Email "%>
+<% end %>
+<% if flash[:notice] %>
+<div class="success"><%= h flash[:notice] %> </div>
+<% end %>
+</div>

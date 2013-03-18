@@ -1,0 +1,23 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  school: MyString
+  degree: MyString
+  major: MyString
+  city: MyString
+  country: MyString
+  begin: 1
+  end: 1
+  website: MyString
+  logo: MyString
+
+two:
+  school: MyString
+  degree: MyString
+  major: MyString
+  city: MyString
+  country: MyString
+  begin: 1
+  end: 1
+  website: MyString
+  logo: MyString

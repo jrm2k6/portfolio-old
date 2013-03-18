@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name_project: MyString
+  pourcentage_achieved: 1
+  description_project: MyString
+
+two:
+  name_project: MyString
+  pourcentage_achieved: 1
+  description_project: MyString

@@ -1,0 +1,33 @@
+<br style="clear:left"/>
+<h3>Home</h3>
+<div id="content_presentation">
+<div id="current_projects"> 
+	<h5 style="padding-left: 5%"> Current projects </h5>
+	<ul>
+	<% for item in  @running_projects %>
+	
+	<li><a href="<%= item.description_project %>"><%= h item.name_project %>
+		<% if item.pourcentage_achieved != nil and item.pourcentage_achieved > 0 %>
+		(~<%= item.pourcentage_achieved %>%)
+		<% end %>
+	</a>
+	</li>
+	<% end %>
+	</ul>
+</div>
+
+	<div id="presentation_text">
+	<h5> About me </h5>
+	<p>I am someone dynamic, able to work in a team setting and make decisions when necessary. I am currently working at <a href="www.prezi.com">Prezi</a>, as a software engineer. I am easy to work with and am passionate about my work and the computer world. I am always learning new things, by reading, experimenting or just playing around with new languages or techniques.
+
+Having a fondness of sports has granted me many unique characteristics, such as, the desire to give the best of myself to every new venture. I love to be challenged and to have hard time finding solutions about complex problems. This is something really exciting for me, and make myself push my limits always higher.
+</p>
+<h5>Why this website?</h5>
+<p id="website_objective">
+	I am currently developing a new website, and will also try to make it a real blog about what I like and what I learn everyday. Stay tuned.
+</p>
+
+	
+	</div>
+</div>
+

@@ -1,0 +1,18 @@
+<p>
+  <b>Name project:</b>
+  <%=h @current_project.name_project %>
+</p>
+
+<p>
+  <b>Pourcentage achieved:</b>
+  <%=h @current_project.pourcentage_achieved %>
+</p>
+
+<p>
+  <b>Description project:</b>
+  <%=h @current_project.description_project %>
+</p>
+
+
+<%= link_to 'Edit', edit_current_project_path(@current_project) %> |
+<%= link_to 'Back', current_projects_path %>

@@ -1,0 +1,38 @@
+<br style="clear:left"/>
+<h3>Experiences </h3>
+<%for experience in @experiences_past %>
+	<div id="item_experience">
+		<div id="date_experience">
+			<%=experience.begin %> - <%=experience.end %>
+		</div>
+		<div id="type_experience">
+		<%=h  experience.kind.name %>
+		</div>
+		<div id="experience_reference">
+			<h5><%=h experience.name %></h5>
+		<div id="experience_company">
+			<%=h experience.place %>
+		</div>
+		<div id="experience_city_country">
+		<%=h experience.city %> - <%=h experience.country %>
+		</div>
+		<p>
+		<div id="experience_content">
+		<ul>
+		<% tab_split = (experience.content).split(";")
+		%>
+		<% for content_item in tab_split do %>
+		<li><%= content_item %></li>
+		<% end %>	
+		</ul>
+		</div>
+		<div = "experience_skill">
+		<ul>
+		<% tab_split = (experience.skills).split(";") %>
+		<% for skill_item in tab_split do %>
+		<li><%= skill_item %></li>
+		<% end %>
+		</ul>
+		</div>
+	</p>
+<% end %>

@@ -1,0 +1,11 @@
+<br style="clear:left" />
+<h3>Educational background </h3>
+<div id="item_education">
+	<% for education in @education_past %>
+	<div id="date_reference"><%=education.begin %> - <%=education.end %><br \></div>
+	<div id="school_reference"><h5><%=h education.school %></h5><div id="img_logo_school"><a href="http://<%=h education.website %>"><%= image_tag(education.logo , :size => "110x50")%></a></div></div>
+	<div id="major_reference"><h6>Major in : </h6><%=h education.major %><br \></div>  
+	<div id="precision_reference"><%=h education.degree %><br \></div>
+	<% end %>
+</div> 
+
